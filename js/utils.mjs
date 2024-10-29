@@ -12,8 +12,8 @@ async function loadTemplate(templatePath) {
 // It loads the header and footer dynamically
   async function loadHeaderFooter() {
     try {
-      const headerTemplate = await loadTemplate('/partials/header.html');
-      const footerTemplate = await loadTemplate('/partials/footer.html');
+      const headerTemplate = await loadTemplate('partials/header.html');
+      const footerTemplate = await loadTemplate('partials/footer.html');
   
       const headerElement = document.getElementById('main-header');
       const footerElement = document.getElementById('main-footer');
