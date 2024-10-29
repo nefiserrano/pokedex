@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #FB8500;
+    --secondary-color: #FFB703;
+    --accent1-color: #023047;
+    --accent2-color: #219EBC;
+    --accent3-color: #8ECAE6;
+
+    --heading-font: "Roboto", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero img {
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    align-self: center;
+    font-size: 60px;
+    color: white;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+body {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--accent3-color);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .active {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+footer {
+    background-color: var(--accent1-color);
+}
+
+footer p {
+    padding: 1rem;
+    color: white;
+}

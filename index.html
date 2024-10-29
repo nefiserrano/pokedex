@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - WDD 330 - Nefi Raul Serrano Ramirez</title>
+    <meta name="description" content="Pokédex Project for WDD 330 course - Web Frontend Development II made by Nefi Raul Serrano Ramirez.">
+    <meta name="author" content="Nefi Raúl Serrano Ramírez">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header"></header>
+    <nav>
+        <ul>
+            <li class="active"><a>List of Pokémon</a></li>
+            <li><a>Image Gallery</a></li>
+            <li><a>Attack List</a></li>
+        </ul>
+    </nav>
+    <form id="search-form">
+        <input type="text" name="pokemon-search" id="pokemon-search">
+        <button type="submit">Search</button>
+    </form>
+    <main></main>
+    <footer id="main-footer"></footer>
+    <script type="module" src="js/utils.mjs"></script>
+    <script type="module" src="js/pokémon-card.js"></script>
+</body>
+</html>
