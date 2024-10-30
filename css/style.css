@@ -74,6 +74,135 @@ nav a:hover {
     background-color: rgba(255,255,255,0.2);
 }
 
+button {
+    background-color: #ffcc00;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    margin: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.9);
+}
+
+#pokemon-search {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#pokemon-search:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.generation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.generation-card {
+    flex: 1 1 215px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: var(--accent2-color);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+}
+
+.type-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.type-card {
+    flex: 1 1 250px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: var(--accent2-color);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+    padding: 15px;
+}
+
+.pokemon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.pokemon-card {
+    flex: 1 1 215px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    overflow-x: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+ 
+}
+
+thead th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+tbody td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+tbody img:hover {
+    transform: scale(1.1);
+}
+
 footer {
     background-color: var(--accent1-color);
 }
