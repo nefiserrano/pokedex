@@ -15,7 +15,7 @@
     <header id="main-header"></header>
     <nav>
         <ul>
-            <li id="pokemon-list-link" class="active"><a href="#">List of Pokémon</a></li>
+            <li id="pokemon-list-link" class="active"><a>List of Pokémon</a></li>
             <li id="image-gallery-link"><a>Image Gallery</a></li>
             <li id="attack-list-link"><a>Attack List</a></li>
         </ul>
@@ -23,15 +23,21 @@
     <button id="toggle-view">View by type</button>
     <button id="view-team-button">My Team</button>
     <form id="search-form">
-        <input type="text" name="pokemon-search" id="pokemon-search" required>
+        <input type="text" name="pokemon-search" id="pokemon-search" required placeholder="Enter the name of a Pokémon">
         <button type="submit">Search</button>
     </form>
     <main>
         <div id="team-cards" class="pokemon-cards"></div>
-        <button id="clear-team">Clear Team</button>
     </main>
     <footer id="main-footer"></footer>
     <script type="module" src="js/utils.mjs"></script>
     <script type="module" src="js/pokémon-card.mjs"></script>
+    <script type="module" src="js/generation-card.mjs"></script>
+    <script type="module" src="js/type-card.mjs"></script>
+    <script type="module" src="js/sort-button.mjs"></script>
+    <script type="module" src="js/search-pokemon.mjs"></script>
+    <script type="module" src="js/attack-list.mjs"></script>
+    <script type="module" src="js/image-gallery.mjs"></script>
+    <script type="module" src="js/team.mjs"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-// It fetches a template to use it later
+// It fetches a template to use it later.
 async function loadTemplate(templatePath) {
     const response = await fetch(templatePath);
     
@@ -9,7 +9,7 @@ async function loadTemplate(templatePath) {
     }
   }
   
-// It loads the header and footer dynamically
+// It loads the header and footer dynamically.
   async function loadHeaderFooter() {
     try {
       const headerTemplate = await loadTemplate('partials/header.html');
@@ -27,3 +27,12 @@ async function loadTemplate(templatePath) {
   }
 
 loadHeaderFooter();
+
+// The main function to fetch JSON.
+export async function fetchJSON(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+      throw new Error(`Failed to fetch: ${response.statusText}`);
+  }
+  return await response.json();
+};
